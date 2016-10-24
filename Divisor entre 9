@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int divisor=0, comparar, suma;
+    float promedio;
+    char repetir;
+
+    do
+    {
+        system("cls");
+        printf("\t\t\tPrograma de numeros divisibles entre 9\n\n");
+        printf("\n\ningrese un numero\t");
+        scanf("%d", &divisor);
+        while(divisor==0)
+        {
+            printf("\n\ningrese un numero\t");
+            scanf("%d", &divisor);
+        }
+        comparar=divisor%9;
+        if(comparar==0)
+        {
+            printf("Si es divisible entre 9\n");
+            suma+=divisor;
+        }
+        else
+        {
+            printf("no es divisible entre 9\n");
+        }
+        fflush(stdin);
+        printf("¿Desea ingresar otro numero?\t");
+        scanf("%c",&repetir);
+    }while(repetir=='s');
+    printf("la suma de los numeros divisores es: %d\n\n",suma);
+    system("pause");
+    return 0;
+}
