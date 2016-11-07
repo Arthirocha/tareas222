@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main ()
+{
+    int pot, base, terminar=1, s;
+
+    printf("\nPrograma potencia \n");
+
+    printf("\nIngrese base: ");
+    scanf("%i",&base);
+    printf("\nIngrese potencia: ");
+    scanf("%i",&pot);
+  printf("\n%i ^ 0 = 1",base);
+for(a=1;a<=pot;s++)
+{
+    fin=(base*terminar);
+
+    printf("\n%i ^ %i = %i",base,s,termimnar);
+}
+system("pause");
+return 0;
+}
